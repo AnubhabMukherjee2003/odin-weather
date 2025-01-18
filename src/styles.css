@@ -19,10 +19,12 @@
     --color-base-text: rgb(18, 18, 18);
     --color-btn-bg: rgb(220, 220, 220);
     --bg-img: url(./light-theme.jpg);
+    --color-base-bg: rgb(235, 225, 225);
+
 }
 
 body {
-    background-image: var(--bg-img);
+    background-image: var(--color-base-bg);
     max-height: 100vh;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -56,4 +58,64 @@ body,
 .theme-toggle:focus {
     outline: none;
     box-shadow: 0 0 0 3px var(--color-base-text);
+}
+
+/* ...existing code... */
+
+.container {
+    min-width: 100vw;
+    /* margin: 50px auto; */
+    padding: 20px;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    /* border-radius: 10px; */
+    /* backdrop-filter: blur(10px); */
+}
+
+.search-box {
+    width: 60vw;
+    display: flex;
+    gap: 10px;
+    margin: 5vh auto;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    border: var(--border-btn);
+    border-radius: 5px;
+    /* background: var(--color-btn-bg); */
+    color: var(--color-base-text);
+}
+
+.search-box button {
+    padding: 10px 20px;
+    border: var(--border-btn);
+    border-radius: 5px;
+    /* background: var(--color-btn-bg); */
+    color: var(--color-base-text);
+    cursor: pointer;
+}
+
+.weather-info {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.weather-info p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.gif-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#weatherGif {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }

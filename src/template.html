@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark light">
-    <title>Webpack-template</title>
+    <title>Weather App</title>
 </head>
 <body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Enter city name" id="cityInput">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div class="weather-info">
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+            <p id="feelsLike"></p>
+        </div>
+        <div class="gif-container">
+            <img id="weatherGif" src="#" alt="Weather GIF">
+        </div>
+    </div>
     <button class="theme-toggle" aria-label="Toggle theme">🌓</button>
-    <!-- <img src="./dark-theme.jpg" alt="Random image"> -->
 </body>
 </html>
